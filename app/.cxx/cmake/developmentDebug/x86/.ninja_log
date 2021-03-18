@@ -1,0 +1,4 @@
+# ninja log v5
+0	232	1616052405	CMakeFiles/native-lib.dir/native-lib.cpp.o	d8e04c836f0c5f0b
+233	304	1616052405	/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/build/intermediates/cmake/developmentDebug/obj/x86/libnative-lib.so	cbb5936ba16e2ed7
+0	12	0	clean	8e2862c74b75a955

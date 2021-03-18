@@ -1,0 +1,7 @@
+Executable : /Users/user/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/x86
+native-lib
+jvmArgs : 
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1ba0e2</color>
+    <color name="colorPrimaryDark">#1694dc</color>
+    <color name="colorPrimaryDark2">#0770cd</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="price">#f96d01</color>
+    <color name="hotelNote">#ecf8ff</color>
+    <color name="fontBlue">#1ba0e2</color>
+    <color name="backGray">#e6eaed</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="graySeparator">#dadada</color>
+</resources>

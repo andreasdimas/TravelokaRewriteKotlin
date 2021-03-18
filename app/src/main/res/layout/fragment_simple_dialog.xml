@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modify"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="12dp"/>
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:layout_marginRight="12dp"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_close" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintTop"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="@+id/parent"
+                app:layout_constraintTop_toBottomOf="@+id/parent"
+                app:srcCompat="@drawable/ic_location" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilDestination"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="84"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubTitle" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jakarta"
+                android:textSize="17sp"
+                android:hint="Destination" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="@+id/parent"
+                app:layout_constraintTop_toBottomOf="@+id/parent"
+                app:srcCompat="@drawable/ic_map_blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linCheckin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linDestination">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="@+id/parent"
+                app:layout_constraintTop_toBottomOf="@+id/parent"
+                app:srcCompat="@drawable/ic_calendar" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCheckin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="62"
+                android:paddingRight="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="Mon, 15 Mar 2021"
+                    android:hint="Check-in Date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilduration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="1 night(s)"
+                    android:hint="Duration" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linCheckin">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="62"
+                android:textSize="12sp"
+                android:text="Check-out: Tue, 16 Mar 2021"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:textSize="12sp"
+                android:text="Max. 31 nights"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linGuest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linNote">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="@+id/parent"
+                app:layout_constraintTop_toBottomOf="@+id/parent"
+                app:srcCompat="@drawable/ic_room" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilGuest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="92"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="1 Room, 1 Adult, 0 Children"
+                    android:hint="Total Guest(s) &amp; Room(s)" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPositive"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_orange"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linGuest" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

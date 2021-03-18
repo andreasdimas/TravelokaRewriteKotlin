@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/x86",
+  "command": "/Users/user/Downloads/ndkbundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=i686-none-linux-android --gcc-toolchain=/Users/user/Downloads/ndkbundle/toolchains/x86-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/user/Downloads/ndkbundle/sysroot  -Dnative_lib_EXPORTS -isystem /Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/user/Downloads/ndkbundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/native-lib.dir/native-lib.cpp.o -c /Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/src/main/cpp/native-lib.cpp",
+  "file": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/src/main/cpp/native-lib.cpp"
+}
+]

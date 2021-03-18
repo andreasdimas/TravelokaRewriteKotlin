@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="price_format">%,.2f $</string>
+    <string name="myTitle">Traveloka Rewrite DimStudio</string>
+    <string name="mySubTitle">15 Mar 2021, 1 night(s), 1 room(s)</string>
+
+
+    <string name="maps_api_key">AIzaSyAHAFoa2ELKHVxGcFnguyDtvj2WFcAsriU</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_saved">Saved</string>
+    <string name="title_mybooking">my Booking</string>
+    <string name="title_myinbox">My Inbox</string>
+    <string name="title_myaccount">My Account</string>
+</resources>

@@ -1,0 +1,11 @@
+{
+  "ndk": "/Users/user/Downloads/ndkbundle",
+  "revision": {
+    "mMajor": 16,
+    "mMinor": 0,
+    "mMicro": 4442984,
+    "mPreview": 0,
+    "mPrecision": "MICRO",
+    "mPreviewSeparator": " "
+  }
+}

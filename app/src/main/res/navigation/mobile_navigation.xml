@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="id.andreasdimas.traveloka.presentation.home.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_saved"
+        android:name="id.andreasdimas.traveloka.presentation.home.ui.saved.SavedFragment"
+        android:label="@string/title_saved"
+        tools:layout="@layout/fragment_saved" />
+
+    <fragment
+        android:id="@+id/navigation_mybooking"
+        android:name="id.andreasdimas.traveloka.presentation.home.ui.mybooking.MyBookingFragment"
+        android:label="@string/title_mybooking"
+        tools:layout="@layout/fragment_mybooking" />
+
+    <fragment
+        android:id="@+id/navigation_myinbox"
+        android:name="id.andreasdimas.traveloka.presentation.home.ui.mybooking.MyBookingFragment"
+        android:label="@string/title_myinbox"
+        tools:layout="@layout/fragment_mybooking" />
+
+    <fragment
+        android:id="@+id/navigation_myaccount"
+        android:name="id.andreasdimas.traveloka.presentation.home.ui.mybooking.MyBookingFragment"
+        android:label="@string/title_myaccount"
+        tools:layout="@layout/fragment_mybooking" />
+</navigation>

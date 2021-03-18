@@ -1,0 +1,42 @@
+{
+  "stringTable": {
+    "0": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/x86",
+    "1": "--target=i686-none-linux-android --gcc-toolchain=/Users/user/Downloads/ndkbundle/toolchains/x86-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/user/Downloads/ndkbundle/sysroot -Dnative_lib_EXPORTS -isystem /Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward -isystem /Users/user/Downloads/ndkbundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/src/main/cpp/CMakeLists.txt",
+    "/Users/user/Downloads/ndkbundle/build/cmake/android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/user/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/x86\" clean"
+  ],
+  "buildTargetsCommand": "/Users/user/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Debug-x86": {
+      "buildCommand": "/Users/user/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/x86\" native-lib",
+      "buildType": "debug",
+      "toolchain": "535071088",
+      "abi": "x86",
+      "artifactName": "native-lib",
+      "files": [
+        {
+          "src": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/src/main/cpp/native-lib.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/build/intermediates/cmake/developmentDebug/obj/x86/libnative-lib.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "535071088": {
+      "cppCompilerExecutable": "/Users/user/Downloads/ndkbundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

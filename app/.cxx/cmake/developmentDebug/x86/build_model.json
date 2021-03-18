@@ -1,0 +1,225 @@
+{
+  "abi": "X86",
+  "abiPlatformVersion": 21,
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "cmake": {
+    "cmakeArtifactsBaseFolder": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/x86",
+    "cmakeServerLogFile": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/x86/cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cxx/developmentDebug/x86",
+    "effectiveConfiguration": {
+      "name": "traditional-android-studio-cmake-environment",
+      "description": "Composite reified CMakeSettings configuration",
+      "generator": "Ninja",
+      "inheritEnvironments": [
+        "ndk"
+      ],
+      "buildRoot": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/x86",
+      "cmakeToolchain": "/Users/user/Downloads/ndkbundle/build/cmake/android.toolchain.cmake",
+      "cmakeExecutable": "/Users/user/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
+      "variables": [
+        {
+          "name": "CMAKE_FIND_ROOT_PATH",
+          "value": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/prefab/x86/prefab"
+        },
+        {
+          "name": "CMAKE_BUILD_TYPE",
+          "value": "Debug"
+        },
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "/Users/user/Downloads/ndkbundle/build/cmake/android.toolchain.cmake"
+        },
+        {
+          "name": "ANDROID_ABI",
+          "value": "x86"
+        },
+        {
+          "name": "ANDROID_NDK",
+          "value": "/Users/user/Downloads/ndkbundle"
+        },
+        {
+          "name": "ANDROID_PLATFORM",
+          "value": "android-21"
+        },
+        {
+          "name": "CMAKE_ANDROID_ARCH_ABI",
+          "value": "x86"
+        },
+        {
+          "name": "CMAKE_ANDROID_NDK",
+          "value": "/Users/user/Downloads/ndkbundle"
+        },
+        {
+          "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
+          "value": "ON"
+        },
+        {
+          "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
+          "value": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/build/intermediates/cmake/developmentDebug/obj/x86"
+        },
+        {
+          "name": "CMAKE_MAKE_PROGRAM",
+          "value": "/Users/user/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
+        },
+        {
+          "name": "CMAKE_SYSTEM_NAME",
+          "value": "Android"
+        },
+        {
+          "name": "CMAKE_SYSTEM_VERSION",
+          "value": "21"
+        }
+      ]
+    }
+  },
+  "cxxBuildFolder": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/x86",
+  "info": {
+    "abi": "X86",
+    "bitness": 32,
+    "deprecated": false,
+    "default": true
+  },
+  "originalCxxBuildFolder": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/x86",
+  "variant": {
+    "buildSystemArgumentList": [],
+    "buildTargetSet": [],
+    "implicitBuildTargetSet": [],
+    "cFlagsList": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "cppFlagsList": [],
+    "isDebuggableEnabled": true,
+    "module": {
+      "buildSystem": "CMAKE",
+      "cmake": {
+        "cmakeExe": "/Users/user/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
+        "minimumCmakeVersion": "3.10.2",
+        "ninjaExe": "/Users/user/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
+      },
+      "cmakeToolchainFile": "/Users/user/Downloads/ndkbundle/build/cmake/android.toolchain.cmake",
+      "cxxFolder": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx",
+      "gradleModulePathName": ":app",
+      "intermediatesFolder": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/build/intermediates",
+      "makeFile": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/src/main/cpp/CMakeLists.txt",
+      "moduleBuildFile": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/build.gradle",
+      "moduleRootFolder": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app",
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkFolder": "/Users/user/Downloads/ndkbundle",
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI",
+          "bitness": 32,
+          "deprecated": true,
+          "default": false
+        },
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "MIPS",
+          "bitness": 32,
+          "deprecated": true,
+          "default": false
+        },
+        {
+          "abi": "MIPS64",
+          "bitness": 64,
+          "deprecated": true,
+          "default": false
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "ndkSupportedAbiList": [
+        "ARMEABI",
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "MIPS",
+        "MIPS64",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultStl": "GNUSTL_STATIC",
+      "ndkVersion": "16.0.4442984",
+      "project": {
+        "compilerSettingsCacheFolder": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/.cxx",
+        "cxxFolder": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/.cxx",
+        "ideBuildTargetAbi": "x86",
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isNativeCompilerSettingsCacheEnabled": false,
+        "rootBuildGradleFolder": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin",
+        "sdkFolder": "/Users/user/Library/Android/sdk",
+        "isPrefabEnabled": false
+      },
+      "splitsAbiFilterSet": [],
+      "stlSharedObjectMap": {
+        "GNUSTL_SHARED": {
+          "ARMEABI": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/libgnustl_shared.so",
+          "ARMEABI_V7A": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so",
+          "ARM64_V8A": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/libgnustl_shared.so",
+          "MIPS": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/mips/libgnustl_shared.so",
+          "MIPS64": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/mips64/libgnustl_shared.so",
+          "X86": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/libgnustl_shared.so",
+          "X86_64": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86_64/libgnustl_shared.so"
+        },
+        "GNUSTL_STATIC": {},
+        "LIBCXX_SHARED": {
+          "ARMEABI": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/llvm-libc++/libs/armeabi/libc++_shared.so",
+          "ARMEABI_V7A": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/libc++_shared.so",
+          "ARM64_V8A": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/libc++_shared.so",
+          "MIPS": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/llvm-libc++/libs/mips/libc++_shared.so",
+          "MIPS64": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/llvm-libc++/libs/mips64/libc++_shared.so",
+          "X86": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/llvm-libc++/libs/x86/libc++_shared.so",
+          "X86_64": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/llvm-libc++/libs/x86_64/libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "STLPORT_SHARED": {
+          "ARMEABI": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/stlport/libs/armeabi/libstlport_shared.so",
+          "ARMEABI_V7A": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/stlport/libs/armeabi-v7a/libstlport_shared.so",
+          "ARM64_V8A": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/stlport/libs/arm64-v8a/libstlport_shared.so",
+          "MIPS": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/stlport/libs/mips/libstlport_shared.so",
+          "MIPS64": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/stlport/libs/mips64/libstlport_shared.so",
+          "X86": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/stlport/libs/x86/libstlport_shared.so",
+          "X86_64": "/Users/user/Downloads/ndkbundle/sources/cxx-stl/stlport/libs/x86_64/libstlport_shared.so"
+        },
+        "STLPORT_STATIC": {},
+        "SYSTEM": {}
+      }
+    },
+    "objFolder": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/build/intermediates/cmake/developmentDebug/obj",
+    "variantName": "developmentDebug",
+    "validAbiList": [
+      "X86"
+    ],
+    "prefabDirectory": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/prefab",
+    "prefabPackageDirectoryList": []
+  },
+  "prefabFolder": "/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/prefab/x86"
+}

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="league"
+            type="id.andreasdimas.traveloka.data.models.Entries" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="130dp"
+                android:layout_height="200dp"
+                imageResource='@{league.data.imageUrl != "" ? league.data.imageUrl : league.data.inventoryList[0].imageUrl}'
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@id/layoutPromo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_idLeague"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@{league.data.displayName}"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintLeft_toRightOf="@+id/imgView"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="oneven eight eight eight nine ten" />
+
+            <ImageView
+                android:id="@+id/imgStar1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:paddingLeft="4dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                app:layout_constraintStart_toEndOf="@+id/imgView"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idLeague"
+                android:visibility="@{league.data.starRating >= 1 ? View.VISIBLE : View.GONE}"
+                app:srcCompat="@drawable/ic_star_rating" />
+
+
+            <ImageView
+                android:id="@+id/imgStar2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                app:layout_constraintStart_toEndOf="@+id/imgStar1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idLeague"
+                android:visibility="@{league.data.starRating >= 2 ? View.VISIBLE : View.GONE}"
+                app:srcCompat="@drawable/ic_star_rating" />
+
+            <ImageView
+                android:id="@+id/imgStar3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                app:layout_constraintStart_toEndOf="@+id/imgStar2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idLeague"
+                android:visibility="@{league.data.starRating >= 3 ? View.VISIBLE : View.GONE}"
+                app:srcCompat="@drawable/ic_star_rating" />
+
+            <ImageView
+                android:id="@+id/imgStar4"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                app:layout_constraintStart_toEndOf="@+id/imgStar3"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idLeague"
+                android:visibility="@{league.data.starRating >= 4 ? View.VISIBLE : View.GONE}"
+                app:srcCompat="@drawable/ic_star_rating" />
+
+            <ImageView
+                android:id="@+id/imgStar5"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                app:layout_constraintStart_toEndOf="@+id/imgStar4"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idLeague"
+                android:visibility="@{league.data.starRating >= 5 ? View.VISIBLE : View.GONE}"
+                app:srcCompat="@drawable/ic_star_rating" />
+
+
+            <ImageView
+                android:id="@+id/imgLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:paddingLeft="4dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                app:layout_constraintStart_toEndOf="@+id/imgView"
+                app:layout_constraintTop_toBottomOf="@+id/imgStar1"
+                app:srcCompat="@drawable/ic_location" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="@{league.data.region}"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/imgLocation"
+                app:layout_constraintTop_toBottomOf="@+id/imgStar1"
+                tools:text="Test" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="@{league.data.userRating}"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintStart_toEndOf="@+id/imgView"
+                app:layout_constraintTop_toBottomOf="@+id/tv_league"
+                tools:text="Test" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLongitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                doubleLongitude='@{league.data.longitude}'
+                app:layout_constraintStart_toEndOf="@+id/imgView"
+                app:layout_constraintTop_toBottomOf="@+id/tvRating"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLatitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                doubleLongitude='@{league.data.latitude}'
+                app:layout_constraintStart_toEndOf="@+id/imgView"
+                app:layout_constraintTop_toBottomOf="@+id/tvRating"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                reviewCount="@{league.data.numReviews}"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvRating"
+                app:layout_constraintTop_toBottomOf="@+id/tv_league"
+                tools:text="Test" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text='@{league.data.hotelInventorySummary.hotelPromoType.promoDescription ?? league.data.inventoryList[0].hotelInventorySummary.hotelPromoType.promoDescription}'
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvOriginalPrice"
+                app:layout_constraintStart_toEndOf="@+id/imgView"
+                tools:text="Test" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOriginalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                currencyConverter='@{league.data.hotelInventorySummary.originalRateDisplay.totalFare.amount ?? league.data.inventoryList[0].hotelInventorySummary.originalRateDisplay.totalFare.amount}'
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvPrice"
+                app:layout_constraintStart_toEndOf="@+id/imgView"
+                tools:text="Test" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:layout_marginBottom="8dp"
+                currencyConverter='@{league.data.lowRate != "" ? league.data.lowRate : league.data.inventoryList[0].lowRate}'
+                android:textSize="14sp"
+                android:textColor="@color/price"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/layoutPromo"
+                app:layout_constraintStart_toEndOf="@+id/imgView"
+                tools:text="Test" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPerNight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="/room/night"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/layoutPromo"
+                app:layout_constraintStart_toEndOf="@+id/tvPrice"
+                tools:text="Test" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPromo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                backgroundColor='@{league.data.accomCardHighlightDisplay.backgroundColor != null ? league.data.accomCardHighlightDisplay.backgroundColor : league.data.inventoryList[0].accomCardHighlightDisplay.backgroundColor != null ? league.data.inventoryList[0].accomCardHighlightDisplay.backgroundColor : "#ff0000"}'
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:visibility='@{league.data.accomCardHighlightDisplay.icon != null ? View.VISIBLE:View.GONE}'>
+
+                <ImageView
+                    android:id="@+id/imgPromo"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="8dp"
+                    imageResource='@{league.data.accomCardHighlightDisplay.icon != null ? league.data.accomCardHighlightDisplay.icon : league.data.inventoryList[0].accomCardHighlightDisplay.icon != null ? league.data.inventoryList[0].accomCardHighlightDisplay.icon : "https://via.placeholder.com/150.png" }'
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:text='@{league.data.accomCardHighlightDisplay.text ?? league.data.inventoryList[0].accomCardHighlightDisplay.text}'
+                    textColor='@{league.data.accomCardHighlightDisplay.fontColor != null ? league.data.accomCardHighlightDisplay.fontColor : league.data.inventoryList[0].accomCardHighlightDisplay.fontColor != null ? league.data.inventoryList[0].accomCardHighlightDisplay.fontColor : "#000000"}'
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgPromo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Gratis Pembatalan Trsedia" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/developmentDebug/x86'
+ninja: no work to do.

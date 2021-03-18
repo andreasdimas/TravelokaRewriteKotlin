@@ -1,0 +1,3 @@
+/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/productionRelease/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/productionRelease/x86_64/CMakeFiles/edit_cache.dir
+/Users/user/Documents/andreasdimascom/traveloka/kotlin/TravelokaRewriteKotlin/app/.cxx/cmake/productionRelease/x86_64/CMakeFiles/native-lib.dir

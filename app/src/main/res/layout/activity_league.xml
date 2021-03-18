@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="id.andreasdimas.traveloka.presentation.hotel.SearchHotelActivity" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backGray"
+        tools:context="id.andreasdimas.traveloka.presentation.hotel.SearchHotelActivity">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            app:theme="@style/ToolbarTheme"
+            app:titleTextAppearance="@style/ToolbarTitleAppearance"
+            app:subtitleTextAppearance="@style/ToolbarSubtitleAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/horizontalView"
+            app:layout_constraintStart_toStartOf="@+id/horizontalView"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progress_bar_color_blue"
+            app:isVisible="@{activity.isLoading}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ProgressBar>
+
+
+        <TextView
+            android:id="@+id/tvSearching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Searching for hotels"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:isVisible="@{activity.isLoading}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"/>
+
+
+        <TextView
+            android:id="@+id/tvWait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please wait a moment yaa.."
+            android:textSize="14sp"
+            app:isVisible="@{activity.isLoading}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSearching"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n\npowered by Custom API @andreasdimas.com"
+            app:isVisible="@{activity.isLoading}"
+            android:textStyle="italic|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvWait"/>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isGone="@{activity.isLoading}"
+            android:paddingBottom="10dp"
+            android:paddingTop="4dp"
+            android:background="@color/colorPrimary"
+            android:scrollbars="none"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginLeft="10dp"
+                android:text="All"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:background="@drawable/bg_rounded"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hotel Sale up to 50%"
+                android:textColor="@color/colorPrimaryDark2"
+                android:padding="10dp"
+                android:background="@drawable/bg_rounded_white"
+                app:layout_constraintLeft_toRightOf="@+id/button"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel discount up to 50%"
+                android:textColor="@color/colorPrimaryDark2"
+                android:padding="10dp"
+                android:background="@drawable/bg_rounded_white"
+                app:layout_constraintLeft_toRightOf="@+id/button3"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Villas &amp; Apartments up to 50%"
+                android:textColor="@color/colorPrimaryDark2"
+                android:padding="10dp"
+                android:background="@drawable/bg_rounded_white"
+                app:layout_constraintLeft_toRightOf="@+id/button4"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel up to 30%"
+                android:textColor="@color/colorPrimaryDark2"
+                android:padding="10dp"
+                android:background="@drawable/bg_rounded_white"
+                app:layout_constraintLeft_toRightOf="@+id/button6"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+
+        <Button
+            android:id="@+id/button_search_area"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_refresh_white"
+            android:background="@drawable/bg_search_area"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="Search this area"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button_return_to_top"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_search_blue"
+            android:background="@drawable/recently_view"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="Recently Viewed"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+
+
+            app:layout_constraintBottom_toTopOf="@+id/linearBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:context="com.example.mapwithmarker.MapsMarkerActivity"
+            app:layout_constraintBottom_toTopOf="@+id/linearBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalView"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_league"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:isGone="@{activity.isLoading}"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/linearBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_league_map"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/linearBottomMap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:clipToPadding="false"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/linearBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+
+            android:background="@drawable/bottom_linear"
+            app:isGone="@{activity.isLoading}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:srcCompat="@drawable/ic_filter_blue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:text="Filter"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark2"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graySeparator" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:srcCompat="@drawable/ic_sort_blue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:text="Sort"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark2"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graySeparator" />
+
+            <RelativeLayout
+                android:id="@+id/buttonMap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="34"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:srcCompat="@drawable/ic_map_blue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:text="Map"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark2"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/hotel_search_linear_button_map"
+            android:visibility="gone"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
