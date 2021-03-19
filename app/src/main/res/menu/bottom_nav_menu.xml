@@ -8,22 +8,22 @@
 
     <item
         android:id="@+id/navigation_saved"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/ic_bookmark"
         android:title="@string/title_saved" />
 
     <item
         android:id="@+id/navigation_mybooking"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/ic_booking"
         android:title="@string/title_mybooking" />
 
     <item
         android:id="@+id/navigation_myinbox"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/ic_mail"
         android:title="@string/title_myinbox" />
 
     <item
         android:id="@+id/navigation_myaccount"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/ic_account"
         android:title="@string/title_myaccount" />
 
 </menu>

@@ -15,4 +15,7 @@
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
     <color name="graySeparator">#dadada</color>
+
+
+    <color name="textColorBlack">#03121a</color>
 </resources>

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import id.andreasdimas.traveloka.R
 import id.andreasdimas.traveloka.presentation.base.BaseActivity
+import id.andreasdimas.traveloka.presentation.home.HomeActivity
 import id.andreasdimas.traveloka.presentation.hotel.SearchHotelActivity
 
 class SplashActivity : BaseActivity() {
@@ -16,7 +17,7 @@ class SplashActivity : BaseActivity() {
         Handler().postDelayed(
             {
                 startActivity(Intent(this, SearchHotelActivity::class.java))
-            }, 1500
+            }, 500
         )
 
     }
